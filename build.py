@@ -36,7 +36,9 @@ def heat_mark(level):
         return ""
     word = "sehr scharf" if level == 2 else "scharf"
     dots = "".join('<span class="chili-dot"></span>' for _ in range(level))
-    return ('<span class="heat" role="img" aria-label="%s" title="%s">%s</span>'
+    # &#8288; (word joiner) verhindert, dass die Schaerfe-Markierung allein
+    # in die naechste Zeile rutscht.
+    return ('&#8288;<span class="heat" role="img" aria-label="%s" title="%s">%s</span>'
             % (word, word, dots))
 
 
@@ -336,7 +338,7 @@ a{ color:inherit; }
   text-decoration:none; border-bottom:1px dotted currentColor;
 }
 .add:hover{ color:var(--ink); }
-.heat{ display:inline-flex; gap:2px; margin-left:.45em; vertical-align:middle; }
+.heat{ display:inline-flex; gap:2px; margin-left:.45em; vertical-align:middle; white-space:nowrap; }
 .chili-dot{
   width:6px; height:6px; border-radius:50% 50% 50% 0; background:var(--chili);
   transform:rotate(-45deg); display:inline-block;
@@ -414,12 +416,29 @@ JS = r"""
   var HOURS = __HOURS__;
   function mins(s){ var p = s.split(":"); return (+p[0])*60 + (+p[1]); }
 
+  // Immer nach Uhrzeit in Deutschland rechnen, nicht nach der Uhr des Besuchers.
+  var WD = { Mo:0, Di:1, Mi:2, Do:3, Fr:4, Sa:5, So:6 };
+  function berlinNow(){
+    try {
+      var parts = {};
+      new Intl.DateTimeFormat("de-DE", {
+        timeZone: "Europe/Berlin", weekday: "short",
+        hour: "2-digit", minute: "2-digit", hour12: false
+      }).formatToParts(new Date()).forEach(function(p){ parts[p.type] = p.value; });
+      var d = WD[(parts.weekday || "").slice(0, 2)];
+      var h = parseInt(parts.hour, 10), m = parseInt(parts.minute, 10);
+      if(d !== undefined && !isNaN(h) && !isNaN(m)) return { day: d, minutes: h*60 + m };
+    } catch(err){ /* faellt unten auf die lokale Uhr zurueck */ }
+    var now = new Date();
+    return { day: (now.getDay() + 6) % 7, minutes: now.getHours()*60 + now.getMinutes() };
+  }
+
   function refreshStatus(){
     var el = document.getElementById("status");
     if(!el) return;
-    var now = new Date();
-    var day = (now.getDay() + 6) % 7;            // Mo = 0
-    var nowM = now.getHours()*60 + now.getMinutes();
+    var t = berlinNow();
+    var day = t.day;
+    var nowM = t.minutes;
     var slots = HOURS[day] || [];
     var open = null, next = null;
     for(var i=0;i<slots.length;i++){
@@ -565,7 +584,6 @@ __LEGEND__
         <p>Angaben gemäß § 5 DDG</p>
         <p><strong>__NAME__</strong><br>Inhaber: __OWNER__<br>__STREET__<br>__ZIP__ __CITY__</p>
         <p>Telefon: __PHONE__<br>E-Mail: <a href="mailto:__EMAIL__">__EMAIL__</a></p>
-        <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: __OWNER__, Anschrift wie oben.</p>
       </div>
     </div>
     <p class="colophon">
@@ -623,7 +641,7 @@ standalone = """<!doctype html>
 <meta property="og:url" content="https://%(domain)s/">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#241E1B">
-<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%%3E%%3Crect width='64' height='64' rx='10' fill='%%23241E1B'/%%3E%%3Ctext x='32' y='46' font-family='Helvetica,Arial' font-size='38' font-weight='700' fill='%%23BF3A2B' text-anchor='middle'%%3EW%%3C/text%%3E%%3C/svg%%3E">
+<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%%3E%%3Crect width='64' height='64' rx='12' fill='%%23241E1B'/%%3E%%3Cpath d='M43 19c-15-5-27 3-27 16 0 9 7 15 16 15 6 0 11-3 13-8' fill='none' stroke='%%23F2714F' stroke-width='9' stroke-linecap='round'/%%3E%%3Cpath d='M45 15l11-5-3 12z' fill='%%23F2714F'/%%3E%%3Ccircle cx='38' cy='24' r='3' fill='%%23241E1B'/%%3E%%3C/svg%%3E">
 %(fonts)s
 <style>
 :root{ color-scheme:light dark; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
