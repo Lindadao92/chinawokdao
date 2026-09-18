@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>China Wok Dao | Chinesisch &amp; Thai in Rodalben</title>
+<meta name="description" content="China Wok Dao in Rodalben: chinesische und thailändische Küche zum Abholen und im Restaurant. Speisekarte, Öffnungszeiten und Telefonnummer 06331 / 140888.">
+<link rel="canonical" href="https://chinawokdao.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="China Wok Dao">
+<meta property="og:title" content="China Wok Dao | Chinesisch &amp; Thai in Rodalben">
+<meta property="og:description" content="China Wok Dao in Rodalben: chinesische und thailändische Küche zum Abholen und im Restaurant. Speisekarte, Öffnungszeiten und Telefonnummer 06331 / 140888.">
+<meta property="og:url" content="https://chinawokdao.com/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#241E1B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23241E1B'/%3E%3Ctext x='32' y='46' font-family='Helvetica,Arial' font-size='38' font-weight='700' fill='%23BF3A2B' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{ color-scheme:light dark; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+
+:root{
+  --paper:#FBFAF8; --surface:#FFFFFF; --sunken:#F2EEE8;
+  --ink:#1A1512; --ink-soft:#4A423C; --ash:#7C736C; --rule:#E2DCD3;
+  --chili:#BF3A2B; --jade:#16685A; --wok:#241E1B; --wok-ink:#EDE6DE; --wok-ash:#A0958C;
+  --shadow:0 1px 2px rgba(26,21,18,.05), 0 8px 24px -12px rgba(26,21,18,.18);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141110; --surface:#1C1817; --sunken:#221D1B;
+    --ink:#EDE6DE; --ink-soft:#BDB3AA; --ash:#968B83; --rule:#302927;
+    --chili:#E8604F; --jade:#45AF97; --wok:#0E0C0B; --wok-ink:#EDE6DE; --wok-ash:#A0958C;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141110; --surface:#1C1817; --sunken:#221D1B;
+  --ink:#EDE6DE; --ink-soft:#BDB3AA; --ash:#968B83; --rule:#302927;
+  --chili:#E8604F; --jade:#45AF97; --wok:#0E0C0B; --wok-ink:#EDE6DE; --wok-ash:#A0958C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px; line-height:1.55; -webkit-text-size-adjust:100%;
+  font-feature-settings:"kern" 1;
+}
+img{ max-width:100%; }
+[hidden]{ display:none !important; }
+a{ color:inherit; }
+:where(a,button,[tabindex]):focus-visible{
+  outline:2px solid var(--jade); outline-offset:3px; border-radius:3px;
+}
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:99;
+  background:var(--jade); color:#fff; padding:.6rem 1rem; border-radius:0 0 6px 0;
+}
+.skip:focus{ left:0; }
+.wrap{ width:100%; max-width:1180px; margin-inline:auto; padding-inline:20px; }
+
+/* ---------- Hero: die dunkle Wok-Flaeche ---------- */
+.hero{
+  background:var(--wok); color:var(--wok-ink);
+  padding-block:clamp(2.5rem,7vw,4.5rem) clamp(2.25rem,6vw,3.5rem);
+  position:relative; overflow:hidden;
+}
+.hero::after{
+  content:""; position:absolute; inset:auto 0 0 0; height:3px;
+  background:linear-gradient(90deg,var(--chili) 0 38%,var(--jade) 38% 100%);
+}
+.hero-grid{ display:grid; gap:clamp(1.75rem,4vw,3rem); grid-template-columns:1fr; }
+@media (min-width:860px){ .hero-grid{ grid-template-columns:1.25fr .85fr; align-items:end; } }
+
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  font-size:.7rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--wok-ash); margin:0 0 1rem;
+}
+.wordmark{
+  font-family:"Big Shoulders Display","Haettenschweiler","Arial Narrow",sans-serif;
+  font-weight:800; font-size:clamp(3.6rem,15vw,8.5rem); line-height:.84;
+  letter-spacing:-.005em; margin:0; text-wrap:balance; text-transform:uppercase;
+}
+.wordmark .dao{ color:var(--chili); }
+.tagline{
+  margin:1.1rem 0 0; max-width:34ch; color:var(--wok-ash);
+  font-size:clamp(1rem,2.4vw,1.15rem);
+}
+.status{
+  display:inline-flex; align-items:center; gap:.5rem; margin-top:1.6rem;
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.78rem;
+  letter-spacing:.06em; text-transform:uppercase;
+  border:1px solid rgba(255,255,255,.18); border-radius:100px; padding:.4rem .85rem;
+}
+.status .dot{ width:8px; height:8px; border-radius:50%; background:var(--wok-ash); flex:none; }
+.status.open .dot{ background:var(--jade); box-shadow:0 0 0 4px rgba(69,175,151,.18); }
+.status.shut .dot{ background:var(--chili); }
+
+.call{
+  display:flex; flex-direction:column; gap:.2rem;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14);
+  border-radius:4px; padding:1.1rem 1.25rem; text-decoration:none;
+  transition:background .18s ease, border-color .18s ease;
+}
+.call:hover{ background:rgba(255,255,255,.09); border-color:rgba(255,255,255,.3); }
+.call-label{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.68rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--wok-ash);
+}
+.call-num{
+  font-family:"Big Shoulders Display","Arial Narrow",sans-serif; font-weight:700;
+  font-size:clamp(2rem,6vw,2.9rem); line-height:1; letter-spacing:.01em;
+  font-variant-numeric:tabular-nums;
+}
+.hero-hours{ margin-top:1.4rem; }
+.hours-table{ width:100%; border-collapse:collapse; font-size:.9rem; }
+.hours-table th, .hours-table td{
+  text-align:left; padding:.42rem 0; border-bottom:1px solid rgba(255,255,255,.09);
+  font-weight:400; vertical-align:baseline;
+}
+.hours-table th{ color:var(--wok-ash); width:8.5em; font-weight:400; }
+.hours-table td{ font-variant-numeric:tabular-nums; }
+.hours-table tr[data-today] th, .hours-table tr[data-today] td{ color:var(--wok-ink); font-weight:600; }
+.hours-table tr[data-today] th::after{ content:" ·"; color:var(--jade); }
+
+/* ---------- Beilagen-Hinweis ---------- */
+.rice-note{
+  background:var(--sunken); border-block:1px solid var(--rule);
+  padding-block:1.1rem; font-size:.95rem;
+}
+.rice-note p{ margin:0; max-width:62ch; }
+.rice-note strong{ font-weight:600; }
+.rice-note .plus{ color:var(--jade); font-weight:600; font-variant-numeric:tabular-nums; }
+
+/* ---------- Layout Karte + Index ---------- */
+.karte{ padding-block:clamp(2.25rem,5vw,3.5rem) 0; }
+.karte-grid{ display:grid; gap:2.5rem; grid-template-columns:1fr; align-items:start; }
+@media (min-width:1000px){
+  .karte-grid{ grid-template-columns:230px minmax(0,1fr); gap:3.5rem; }
+}
+
+.index{ display:none; }
+@media (min-width:1000px){
+  .index{
+    display:block; position:sticky; top:1.5rem; max-height:calc(100dvh - 3rem);
+    overflow-y:auto; overscroll-behavior:contain;
+  }
+}
+.index h2{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.68rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--ash);
+  margin:0 0 .85rem; font-weight:500;
+}
+.index ol{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px; }
+.index a{
+  display:block; padding:.34rem .6rem; text-decoration:none; font-size:.875rem;
+  color:var(--ink-soft); border-left:2px solid transparent; border-radius:0 3px 3px 0;
+  transition:color .15s ease, border-color .15s ease, background .15s ease;
+}
+.index a:hover{ color:var(--ink); background:var(--sunken); }
+.index a[aria-current="true"]{ color:var(--chili); border-left-color:var(--chili); font-weight:600; }
+
+/* Chip-Leiste fuer schmale Displays */
+.chips{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:20;
+  background:color-mix(in srgb, var(--paper) 92%, transparent);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule); margin-bottom:1.75rem;
+}
+@media (min-width:1000px){ .chips{ display:none; } }
+.chips ul{
+  list-style:none; margin:0; padding:.6rem 20px; display:flex; gap:.4rem;
+  overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch;
+}
+.chips ul::-webkit-scrollbar{ display:none; }
+.chips a{
+  display:block; white-space:nowrap; text-decoration:none; font-size:.8rem;
+  padding:.35rem .75rem; border:1px solid var(--rule); border-radius:100px;
+  color:var(--ink-soft); background:var(--surface);
+}
+.chips a[aria-current="true"]{ background:var(--chili); border-color:var(--chili); color:#fff; }
+
+/* ---------- Gerichte ---------- */
+.sec{ margin:0 0 2.75rem; scroll-margin-top:5rem; }
+@media (min-width:1000px){ .sec{ scroll-margin-top:1.5rem; } }
+.sec-head{
+  display:flex; align-items:baseline; gap:.65rem; flex-wrap:wrap;
+  margin:0 0 .9rem; padding-bottom:.5rem; border-bottom:2px solid var(--ink);
+}
+.sec-title{
+  font-family:"Big Shoulders Display","Arial Narrow",sans-serif; font-weight:700;
+  font-size:clamp(1.65rem,4.5vw,2.3rem); line-height:1; text-transform:uppercase;
+  letter-spacing:.005em;
+}
+.sec-note{
+  font-family:"Public Sans",sans-serif; font-size:.78rem; font-weight:400;
+  color:var(--jade); border:1px solid currentColor; border-radius:100px;
+  padding:.1rem .55rem; line-height:1.5; white-space:nowrap;
+}
+.sec-range{
+  margin-left:auto; font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.75rem; color:var(--ash); font-variant-numeric:tabular-nums;
+}
+.items{ list-style:none; margin:0; padding:0; }
+.item{
+  display:grid; grid-template-columns:3.1rem minmax(0,1fr); gap:0 .85rem;
+  align-items:baseline; padding:.62rem 0; border-bottom:1px solid var(--rule);
+}
+.item:last-child{ border-bottom:0; }
+.item:target{ background:var(--sunken); }
+.num{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-weight:500;
+  font-size:1rem; font-variant-numeric:tabular-nums; color:var(--chili);
+  letter-spacing:-.02em;
+}
+.num-empty{ color:var(--rule); }
+.body{ display:block; }
+.name{ }
+.add{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.62rem;
+  vertical-align:super; margin-left:.22em; color:var(--ash);
+  text-decoration:none; border-bottom:1px dotted currentColor;
+}
+.add:hover{ color:var(--ink); }
+.heat{ display:inline-flex; gap:2px; margin-left:.45em; vertical-align:middle; }
+.chili-dot{
+  width:6px; height:6px; border-radius:50% 50% 50% 0; background:var(--chili);
+  transform:rotate(-45deg); display:inline-block;
+}
+.price{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums;
+  text-align:right; white-space:nowrap;
+}
+
+/* ---------- Zusatzstoffe ---------- */
+.legend{ background:var(--sunken); border-top:1px solid var(--rule); padding-block:2.5rem; margin-top:1rem; }
+.legend h2{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.68rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--ash);
+  margin:0 0 1rem; font-weight:500;
+}
+.legend ul{
+  list-style:none; margin:0; padding:0; display:grid; gap:.45rem .5rem;
+  grid-template-columns:1fr; font-size:.875rem;
+}
+@media (min-width:640px){ .legend ul{ grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:2.5rem; } }
+.legend li{ display:grid; grid-template-columns:2.1rem minmax(0,1fr); gap:.5rem; align-items:baseline; }
+.lg-code{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.8rem;
+  color:var(--chili); font-variant-numeric:tabular-nums;
+}
+.lg-text{ color:var(--ink-soft); }
+
+/* ---------- Kontakt / Fuss ---------- */
+.foot{ background:var(--wok); color:var(--wok-ink); padding-block:clamp(2.5rem,6vw,3.75rem); }
+.foot-grid{ display:grid; gap:2rem; grid-template-columns:1fr; }
+@media (min-width:760px){ .foot-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:2.5rem; } }
+.foot h2{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.68rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--wok-ash);
+  margin:0 0 .85rem; font-weight:500;
+}
+.foot p{ margin:0 0 .3rem; }
+.foot a{ color:var(--wok-ink); text-decoration-color:var(--wok-ash); text-underline-offset:3px; }
+.foot a:hover{ text-decoration-color:var(--wok-ink); }
+.foot .maps{
+  display:inline-block; margin-top:.7rem; font-size:.85rem;
+  color:var(--jade); text-decoration:none; border-bottom:1px solid currentColor;
+}
+.foot .imp p{ margin-bottom:.85rem; font-size:.9rem; }
+.foot .imp p:first-of-type{ color:var(--wok-ash); font-size:.8rem; }
+.foot .imp strong{ font-weight:600; }
+.colophon{
+  margin-top:2.5rem; padding-top:1.25rem; border-top:1px solid rgba(255,255,255,.1);
+  font-size:.78rem; color:var(--wok-ash);
+  display:flex; flex-wrap:wrap; gap:.4rem 1.25rem; align-items:baseline;
+}
+
+/* ---------- Anruf-Leiste (Handy) ---------- */
+.callbar{
+  position:fixed; left:0; right:0; bottom:0; z-index:30;
+  background:var(--chili); color:#fff; text-decoration:none;
+  display:flex; align-items:center; justify-content:center; gap:.6rem;
+  padding:.85rem 1rem calc(.85rem + env(safe-area-inset-bottom,0px));
+  font-weight:600; font-size:1rem; letter-spacing:.01em;
+  box-shadow:0 -6px 20px -10px rgba(0,0,0,.5);
+}
+.callbar .tel{ font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums; }
+@media (min-width:1000px){ .callbar{ display:none; } }
+@media (max-width:999px){ .foot{ padding-bottom:calc(4.5rem + env(safe-area-inset-bottom,0px)); } }
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{ animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+}
+html{ scroll-behavior:smooth; }
+
+</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Restaurant",
+ "name": "China Wok Dao",
+ "servesCuisine": [
+  "Chinesisch",
+  "Thailändisch"
+ ],
+ "telephone": "+496331140888",
+ "url": "https://chinawokdao.com/",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Hauptstr. 158",
+  "postalCode": "66976",
+  "addressLocality": "Rodalben",
+  "addressCountry": "DE"
+ },
+ "hasMap": "https://www.google.com/maps/search/?api=1&query=Hauptstr.+158+66976+Rodalben",
+ "acceptsReservations": "True",
+ "menu": "https://chinawokdao.com/#speisekarte",
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Monday",
+   "opens": "17:00",
+   "closes": "22:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Tuesday",
+   "opens": "11:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Tuesday",
+   "opens": "17:00",
+   "closes": "22:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Wednesday",
+   "opens": "11:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Wednesday",
+   "opens": "17:00",
+   "closes": "22:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Thursday",
+   "opens": "11:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Thursday",
+   "opens": "17:00",
+   "closes": "22:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Friday",
+   "opens": "11:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Friday",
+   "opens": "17:00",
+   "closes": "22:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Saturday",
+   "opens": "11:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Saturday",
+   "opens": "17:00",
+   "closes": "22:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Sunday",
+   "opens": "11:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "https://schema.org/Sunday",
+   "opens": "17:00",
+   "closes": "22:00"
+  }
+ ],
+ "email": "lindadao92@gmail.com"
+}</script>
+</head>
+<body>
+<a class="skip" href="#speisekarte">Direkt zur Speisekarte</a>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Rodalben &middot; Chinesisch &amp; Thai</p>
+      <h1 class="wordmark">China<br>Wok <span class="dao">Dao</span></h1>
+      <p class="tagline">Frisch aus dem Wok, zum Mitnehmen oder bei uns im Haus. Bestellt wird nach Nummer.</p>
+      <p class="status" id="status"><span class="dot"></span><span class="status-text">Öffnungszeiten</span></p>
+    </div>
+    <div>
+      <a class="call" href="tel:+496331140888">
+        <span class="call-label">Bestellung &amp; Reservierung</span>
+        <span class="call-num">06331 / 140888</span>
+      </a>
+      <div class="hero-hours">
+        <table class="hours-table">
+          <caption class="eyebrow" style="margin:0 0 .5rem; text-align:left;">Öffnungszeiten</caption>
+          <tbody>
+          <tr class="today" data-day="0"><th scope="row">Montag</th><td>17:00 bis 22:00 Uhr</td></tr>
+          <tr class="today" data-day="1"><th scope="row">Dienstag</th><td>11:00 bis 14:00 Uhr &amp; 17:00 bis 22:00 Uhr</td></tr>
+          <tr class="today" data-day="2"><th scope="row">Mittwoch</th><td>11:00 bis 14:00 Uhr &amp; 17:00 bis 22:00 Uhr</td></tr>
+          <tr class="today" data-day="3"><th scope="row">Donnerstag</th><td>11:00 bis 14:00 Uhr &amp; 17:00 bis 22:00 Uhr</td></tr>
+          <tr class="today" data-day="4"><th scope="row">Freitag</th><td>11:00 bis 14:00 Uhr &amp; 17:00 bis 22:00 Uhr</td></tr>
+          <tr class="today" data-day="5"><th scope="row">Samstag</th><td>11:00 bis 14:00 Uhr &amp; 17:00 bis 22:00 Uhr</td></tr>
+          <tr class="today" data-day="6"><th scope="row">Sonntag</th><td>11:00 bis 14:00 Uhr &amp; 17:00 bis 22:00 Uhr</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="rice-note">
+  <div class="wrap">
+    <p><strong>Alle Hauptgerichte kommen mit Reis als Beilage.</strong>
+    Stattdessen gebratener Reis oder gebratene Nudeln: <span class="plus">+2,50 €</span></p>
+  </div>
+</div>
+
+<nav class="chips" aria-label="Abschnitte der Speisekarte">
+  <ul>
+    <li><a href="#suppen">Suppen</a></li>
+    <li><a href="#vorspeisen">Vorspeisen</a></li>
+    <li><a href="#schwein">Schweinefleisch</a></li>
+    <li><a href="#rind">Rindfleisch</a></li>
+    <li><a href="#huhn">Hühnerfleisch</a></li>
+    <li><a href="#ente">Gegrillte Ente</a></li>
+    <li><a href="#fisch">Fisch</a></li>
+    <li><a href="#reis">Reisgerichte</a></li>
+    <li><a href="#nudeln">Nudelgerichte</a></li>
+    <li><a href="#spezial">Spezialitäten</a></li>
+    <li><a href="#vegetarisch">Vegetarische Gerichte</a></li>
+    <li><a href="#hummerkrabben">Hummerkrabben</a></li>
+    <li><a href="#spez-ente">Spezialitäten Ente</a></li>
+    <li><a href="#spez-huhn">Spezialitäten Hähnchen</a></li>
+    <li><a href="#thai-reisnudeln">Thai-Spezialitäten Reisnudeln</a></li>
+    <li><a href="#thai-schwein">Thai-Spezialitäten Schweinefleisch</a></li>
+    <li><a href="#thai-rind">Thai-Spezialitäten Rindfleisch</a></li>
+    <li><a href="#thai-huhn">Thai-Spezialitäten Hühnerfleisch</a></li>
+    <li><a href="#beilagen">Beilagen</a></li>
+    <li><a href="#nachtisch">Nachtisch</a></li>
+    <li><a href="#getraenke">Getränke</a></li>
+  </ul>
+</nav>
+
+<main class="karte" id="speisekarte">
+  <div class="wrap karte-grid">
+    <nav class="index" aria-label="Speisekarte">
+      <h2>Speisekarte</h2>
+      <ol>
+        <li><a href="#suppen">Suppen</a></li>
+        <li><a href="#vorspeisen">Vorspeisen</a></li>
+        <li><a href="#schwein">Schweinefleisch</a></li>
+        <li><a href="#rind">Rindfleisch</a></li>
+        <li><a href="#huhn">Hühnerfleisch</a></li>
+        <li><a href="#ente">Gegrillte Ente</a></li>
+        <li><a href="#fisch">Fisch</a></li>
+        <li><a href="#reis">Reisgerichte</a></li>
+        <li><a href="#nudeln">Nudelgerichte</a></li>
+        <li><a href="#spezial">Spezialitäten</a></li>
+        <li><a href="#vegetarisch">Vegetarische Gerichte</a></li>
+        <li><a href="#hummerkrabben">Hummerkrabben</a></li>
+        <li><a href="#spez-ente">Spezialitäten Ente</a></li>
+        <li><a href="#spez-huhn">Spezialitäten Hähnchen</a></li>
+        <li><a href="#thai-reisnudeln">Thai-Spezialitäten Reisnudeln</a></li>
+        <li><a href="#thai-schwein">Thai-Spezialitäten Schweinefleisch</a></li>
+        <li><a href="#thai-rind">Thai-Spezialitäten Rindfleisch</a></li>
+        <li><a href="#thai-huhn">Thai-Spezialitäten Hühnerfleisch</a></li>
+        <li><a href="#beilagen">Beilagen</a></li>
+        <li><a href="#nachtisch">Nachtisch</a></li>
+        <li><a href="#getraenke">Getränke</a></li>
+      </ol>
+    </nav>
+    <div>
+
+    <section class="sec" id="suppen" aria-labelledby="h-suppen">
+      <h2 class="sec-head" id="h-suppen"><span class="sec-title">Suppen</span><span class="sec-range">1&thinsp;&ndash;&thinsp;5b</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-1"><span class="num">1</span><span class="body"><span class="name">Peking Suppe, sauer-scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-2"><span class="num">2</span><span class="body"><span class="name">Frische Mixgemüsesuppe</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-3"><span class="num">3</span><span class="body"><span class="name">Hühnersuppe mit Bambussprossen und Champignons</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-4"><span class="num">4</span><span class="body"><span class="name">Wan-Tan-Suppe</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-5a"><span class="num">5a</span><span class="body"><span class="name">Kung-Fu-Suppe, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-5b"><span class="num">5b</span><span class="body"><span class="name">Nudelsuppe mit Krabben</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="vorspeisen" aria-labelledby="h-vorspeisen">
+      <h2 class="sec-head" id="h-vorspeisen"><span class="sec-title">Vorspeisen</span><span class="sec-range">6&thinsp;&ndash;&thinsp;12</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-6"><span class="num">6</span><span class="body"><span class="name">Krabbenchips</span></span></li>
+        <li class="item" id="nr-7a"><span class="num">7a</span><span class="body"><span class="name">Gebackene Wan-Tan, 8 Stück</span></span></li>
+        <li class="item" id="nr-7b"><span class="num">7b</span><span class="body"><span class="name">Mini-Rolle, süß-sauer</span></span></li>
+        <li class="item" id="nr-8"><span class="num">8</span><span class="body"><span class="name">Frühlingsrolle, groß</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-9"><span class="num">9</span><span class="body"><span class="name">Krabben-Salat</span></span></li>
+        <li class="item" id="nr-10"><span class="num">10</span><span class="body"><span class="name">Gemischter Salat</span></span></li>
+        <li class="item" id="nr-11"><span class="num">11</span><span class="body"><span class="name">Hühnerfleisch-Salat</span></span></li>
+        <li class="item" id="nr-12"><span class="num">12</span><span class="body"><span class="name">Hähnchenspieße mit Erdnuss-Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="schwein" aria-labelledby="h-schwein">
+      <h2 class="sec-head" id="h-schwein"><span class="sec-title">Schweinefleisch</span><span class="sec-note">mit Reis</span><span class="sec-range">13&thinsp;&ndash;&thinsp;18</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-13"><span class="num">13</span><span class="body"><span class="name">Schweinefleisch, Chop-Suey</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-14"><span class="num">14</span><span class="body"><span class="name">Schweinefleisch mit Bambussprossen, Paprika-Sauce (Gung-Po), scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-15"><span class="num">15</span><span class="body"><span class="name">Schweinefleisch mit Bambussprossen und Champignons</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-16"><span class="num">16</span><span class="body"><span class="name">Schweinefleisch knusprig gebacken in süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-17"><span class="num">17</span><span class="body"><span class="name">Schweinefleisch nach Szechuan-Art mit Gemüse, Knoblauch, pikanter Sauce, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-18"><span class="num">18</span><span class="body"><span class="name">Schweinefleisch mit Gemüse und Curry-Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="rind" aria-labelledby="h-rind">
+      <h2 class="sec-head" id="h-rind"><span class="sec-title">Rindfleisch</span><span class="sec-note">mit Reis</span><span class="sec-range">19&thinsp;&ndash;&thinsp;24</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-19"><span class="num">19</span><span class="body"><span class="name">Rinderfilet, Chop-Suey</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-20"><span class="num">20</span><span class="body"><span class="name">Rindfleisch mit Bambussprossen, Paprika-Sauce (Gung-Po), scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-21"><span class="num">21</span><span class="body"><span class="name">Rindfleisch mit Bambus und Champignons</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-22"><span class="num">22</span><span class="body"><span class="name">Rindfleisch nach Szechuan-Art mit Gemüse und pikanter Knoblauch-Sauce, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-23"><span class="num">23</span><span class="body"><span class="name">Rindfleisch mit Zwiebeln</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-24"><span class="num">24</span><span class="body"><span class="name">Rindfleisch mit Gemüse und Curry-Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="huhn" aria-labelledby="h-huhn">
+      <h2 class="sec-head" id="h-huhn"><span class="sec-title">Hühnerfleisch</span><span class="sec-note">mit Reis</span><span class="sec-range">25&thinsp;&ndash;&thinsp;32</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-25"><span class="num">25</span><span class="body"><span class="name">Hähnchenbrustfilet, Chop-Suey</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-26"><span class="num">26</span><span class="body"><span class="name">Hähnchenbrustfilet mit Bambussprossen, Paprika-Sauce (Gung-Po), scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-27"><span class="num">27</span><span class="body"><span class="name">Hähnchenbrustfilet mit Bambussprossen und Champignons</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-28"><span class="num">28</span><span class="body"><span class="name">Hähnchenbrustfilet mit Ananas in süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-29"><span class="num">29</span><span class="body"><span class="name">Hähnchenbrustfilet nach Szechuan-Art mit Gemüse, Knoblauch, pikanter Sauce, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-30"><span class="num">30</span><span class="body"><span class="name">Hähnchenbrustfilet mit Gemüse und Curry-Sauce, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-31"><span class="num">31</span><span class="body"><span class="name">Knusprig paniertes Hähnchenbrustfilet nach Can-Ton-Art mit chinesischem Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-32"><span class="num">32</span><span class="body"><span class="name">Hähnchenbrustfilet paniert, gebacken mit süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="ente" aria-labelledby="h-ente">
+      <h2 class="sec-head" id="h-ente"><span class="sec-title">Gegrillte Ente</span><span class="sec-note">mit Reis</span><span class="sec-range">33&thinsp;&ndash;&thinsp;37</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-33"><span class="num">33</span><span class="body"><span class="name">Ente, Chop-Suey, mit Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-34"><span class="num">34</span><span class="body"><span class="name">Ente mit Bambussprossen, Paprika-Sauce (Gung-Po), scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-35"><span class="num">35</span><span class="body"><span class="name">Ente mit Ananas in süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-36"><span class="num">36</span><span class="body"><span class="name">Knusprige Ente nach Can-Ton-Art mit chinesischem Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-37"><span class="num">37</span><span class="body"><span class="name">China-Wok spezial, knusprige Ente mit Gemüse, scharf mit Knoblauch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="fisch" aria-labelledby="h-fisch">
+      <h2 class="sec-head" id="h-fisch"><span class="sec-title">Fisch</span><span class="sec-note">mit Reis</span><span class="sec-range">38&thinsp;&ndash;&thinsp;40</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-38"><span class="num">38</span><span class="body"><span class="name">Gebackenes Fischfilet in süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-39"><span class="num">39</span><span class="body"><span class="name">Gebackenes Fischfilet nach Szechuan-Art</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-40"><span class="num">40</span><span class="body"><span class="name">Gebackenes Fischfilet mit Curry und Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="reis" aria-labelledby="h-reis">
+      <h2 class="sec-head" id="h-reis"><span class="sec-title">Reisgerichte</span><span class="sec-range">41a&thinsp;&ndash;&thinsp;45b</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-41a"><span class="num">41a</span><span class="body"><span class="name">Gebratener Reis mit Hähnchenfleisch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-41b"><span class="num">41b</span><span class="body"><span class="name">Gebratener Reis mit paniertem Hähnchenbrustfilet</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-42"><span class="num">42</span><span class="body"><span class="name">Gebratener Reis mit Schweinefleisch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-43"><span class="num">43</span><span class="body"><span class="name">Gebratener Reis mit Rindfleisch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-44"><span class="num">44</span><span class="body"><span class="name">Gebratener Reis mit Krabben</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-45a"><span class="num">45a</span><span class="body"><span class="name">Nasi-Goreng</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 1, 2, 3, 4" aria-label="Zusatzstoffe 1, 2, 3, 4">1,2,3,4</a></span></li>
+        <li class="item" id="nr-45b"><span class="num">45b</span><span class="body"><span class="name">Gebratener Reis mit gegrillter Ente</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="nudeln" aria-labelledby="h-nudeln">
+      <h2 class="sec-head" id="h-nudeln"><span class="sec-title">Nudelgerichte</span><span class="sec-range">46a&thinsp;&ndash;&thinsp;50b</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-46a"><span class="num">46a</span><span class="body"><span class="name">Gebratene Nudeln mit Hähnchenfleisch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-46b"><span class="num">46b</span><span class="body"><span class="name">Gebratene Nudeln mit paniertem Hähnchenbrustfilet</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-47"><span class="num">47</span><span class="body"><span class="name">Gebratene Nudeln mit Schweinefleisch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-48"><span class="num">48</span><span class="body"><span class="name">Gebratene Nudeln mit Rindfleisch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-49"><span class="num">49</span><span class="body"><span class="name">Gebratene Nudeln mit Krabben</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-50a"><span class="num">50a</span><span class="body"><span class="name">Bami-Goreng</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 1, 2, 3, 4" aria-label="Zusatzstoffe 1, 2, 3, 4">1,2,3,4</a></span></li>
+        <li class="item" id="nr-50b"><span class="num">50b</span><span class="body"><span class="name">Gebratene Nudeln mit gegrillter Ente</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="spezial" aria-labelledby="h-spezial">
+      <h2 class="sec-head" id="h-spezial"><span class="sec-title">Spezialitäten</span><span class="sec-note">mit Reis</span><span class="sec-range">51&thinsp;&ndash;&thinsp;56</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-51"><span class="num">51</span><span class="body"><span class="name">„Chow Sam Sing“ Krabben, Hühnerfleisch, Schweinefleisch, chinesisches Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-52"><span class="num">52</span><span class="body"><span class="name">„Chow-Kan á la China“ Krabben, Ente, Hühnerfleisch, Schweinefleisch und chinesisches pikantes Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-53"><span class="num">53</span><span class="body"><span class="name">Knuspriges Hähnchen mit pikanter Erdnuss-Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-54"><span class="num">54</span><span class="body"><span class="name">„Shangai-Hähnchen“ in scharfer süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-55"><span class="num">55</span><span class="body"><span class="name">„Drachen-Feuer“ Rinderfilet, Ente, Hühnerfleisch, Krabben und Paprika, sehr scharf mit Knoblauch</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="sehr scharf" title="sehr scharf"><span class="chili-dot"></span><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-56"><span class="num">56</span><span class="body"><span class="name">Dreierlei Fleisch mit chinesischem Gemüse: Hühnerbrustfilet, Rinderfilet, Schweinefilet</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="vegetarisch" aria-labelledby="h-vegetarisch">
+      <h2 class="sec-head" id="h-vegetarisch"><span class="sec-title">Vegetarische Gerichte</span><span class="sec-range">57&thinsp;&ndash;&thinsp;59</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-57"><span class="num">57</span><span class="body"><span class="name">Frisches chinesisches Mixgemüse, pikant, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-58"><span class="num">58</span><span class="body"><span class="name">Gebratener Reis mit chinesischem Mixgemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-59"><span class="num">59</span><span class="body"><span class="name">Gebratene Nudeln mit Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="hummerkrabben" aria-labelledby="h-hummerkrabben">
+      <h2 class="sec-head" id="h-hummerkrabben"><span class="sec-title">Hummerkrabben</span><span class="sec-note">mit Reis</span><span class="sec-range">68&thinsp;&ndash;&thinsp;72</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-68"><span class="num">68</span><span class="body"><span class="name">Hummer-Krabben, Chop-Suey</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-69"><span class="num">69</span><span class="body"><span class="name">Hummer-Krabben mit Bambussprossen, Paprika-Sauce (Gung-Po), scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-70"><span class="num">70</span><span class="body"><span class="name">Hummer-Krabben knusprig gebacken in süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-71"><span class="num">71</span><span class="body"><span class="name">Hummer-Krabben nach Szechuan-Art mit Gemüse, Knoblauch, pikanter Sauce, scharf</span><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-72"><span class="num">72</span><span class="body"><span class="name">Hummer-Krabben mit Gemüse und Curry-Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="spez-ente" aria-labelledby="h-spez-ente">
+      <h2 class="sec-head" id="h-spez-ente"><span class="sec-title">Spezialitäten Ente</span><span class="sec-note">mit Reis</span><span class="sec-range">73&thinsp;&ndash;&thinsp;75</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-73"><span class="num">73</span><span class="body"><span class="name">Knusprige Ente mit pikanter Erdnuss-Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-74"><span class="num">74</span><span class="body"><span class="name">Gäng Ped Muh: Ente mit Bambus, Paprika, Bohnen, Thai-Curry und Kokosmilch, sehr scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="sehr scharf" title="sehr scharf"><span class="chili-dot"></span><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-75"><span class="num">75</span><span class="body"><span class="name">Panäng Muh: Ente mit Kokosmilch, Bambus, Paprika, Bohnen und spezieller Thai-Currymischung, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="spez-huhn" aria-labelledby="h-spez-huhn">
+      <h2 class="sec-head" id="h-spez-huhn"><span class="sec-title">Spezialitäten Hähnchen</span><span class="sec-note">mit Reis</span><span class="sec-range">76&thinsp;&ndash;&thinsp;78</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-76"><span class="num">76</span><span class="body"><span class="name">Knusprige Hähnchenschenkel nach Can-Ton-Art</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-77"><span class="num">77</span><span class="body"><span class="name">Knusprige Hähnchenschenkel mit Curry und Gemüse, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-78"><span class="num">78</span><span class="body"><span class="name">Knusprige Hähnchenschenkel mit Bambussprossen, Paprika-Sauce (Gung-Po), scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="thai-reisnudeln" aria-labelledby="h-thai-reisnudeln">
+      <h2 class="sec-head" id="h-thai-reisnudeln"><span class="sec-title">Thai-Spezialitäten Reisnudeln</span><span class="sec-range">79&thinsp;&ndash;&thinsp;81</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-79"><span class="num">79</span><span class="body"><span class="name">Gebratene Reisnudeln mit Hühnerfleisch und Gemüse</span></span></li>
+        <li class="item" id="nr-80"><span class="num">80</span><span class="body"><span class="name">Gebratene Reisnudeln mit Krabben und Gemüse</span></span></li>
+        <li class="item" id="nr-81"><span class="num">81</span><span class="body"><span class="name">Gebratene Reisnudeln mit Schinken, Huhn, Krabben und Gemüse</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 1, 2, 3, 4" aria-label="Zusatzstoffe 1, 2, 3, 4">1,2,3,4</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="thai-schwein" aria-labelledby="h-thai-schwein">
+      <h2 class="sec-head" id="h-thai-schwein"><span class="sec-title">Thai-Spezialitäten Schweinefleisch</span><span class="sec-note">mit Reis</span><span class="sec-range">82&thinsp;&ndash;&thinsp;86</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-82"><span class="num">82</span><span class="body"><span class="name">Schweinefleisch mit Ananas, Paprika und süß-saurer Sauce</span></span></li>
+        <li class="item" id="nr-83"><span class="num">83</span><span class="body"><span class="name">„Koon-Po-Chi“ Schweinefilet mit chinesischem Gemüse, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-84"><span class="num">84</span><span class="body"><span class="name">Muh Tord Gratain Prig Thai: Schweinefilet mit Bohnen, Knoblauch, Peperoni</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-85"><span class="num">85</span><span class="body"><span class="name">Gäng Ped Muh: Schweinefleisch mit Bambus, Paprika, Bohnen, Thai-Curry und Kokosmilch, sehr scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="sehr scharf" title="sehr scharf"><span class="chili-dot"></span><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-86"><span class="num">86</span><span class="body"><span class="name">Panäng Muh: Schweinefleisch mit Kokosmilch, Bambus, Paprika, Bohnen und spezieller Thai-Currymischung, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="thai-rind" aria-labelledby="h-thai-rind">
+      <h2 class="sec-head" id="h-thai-rind"><span class="sec-title">Thai-Spezialitäten Rindfleisch</span><span class="sec-note">mit Reis</span><span class="sec-range">87&thinsp;&ndash;&thinsp;91</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-87"><span class="num">87</span><span class="body"><span class="name">Rinderfilet mit Ananas, Paprika und süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-88"><span class="num">88</span><span class="body"><span class="name">„Koon-Po-Au“ Rinderfilet mit chinesischem Gemüse, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-89"><span class="num">89</span><span class="body"><span class="name">Nüa Tord Gratian Prig Thai: Rindfleisch mit Bohnen, Knoblauch, Peperoni und Thai-Basilikum, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-90"><span class="num">90</span><span class="body"><span class="name">Gäng Pet Nüa: Rindfleisch mit Bambus, Paprika, Bohnen, Thai-Curry und Kokosmilch, sehr scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="sehr scharf" title="sehr scharf"><span class="chili-dot"></span><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-91"><span class="num">91</span><span class="body"><span class="name">Panäng Nüa: Rindfleisch mit Kokosmilch, Bambus, Paprika, Bohnen und spezieller Thai-Currymischung</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="thai-huhn" aria-labelledby="h-thai-huhn">
+      <h2 class="sec-head" id="h-thai-huhn"><span class="sec-title">Thai-Spezialitäten Hühnerfleisch</span><span class="sec-note">mit Reis</span><span class="sec-range">92&thinsp;&ndash;&thinsp;96</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-92"><span class="num">92</span><span class="body"><span class="name">Hähnchenbrustfilet mit Ananas und süß-saurer Sauce</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-93"><span class="num">93</span><span class="body"><span class="name">„Kon-Po-Kai“ Hähnchenbrustfilet mit chinesischem Gemüse, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-94"><span class="num">94</span><span class="body"><span class="name">Gai Tord Gratain Prig: Hühnerfleisch, Bohnen, Knoblauch, Peperoni und Thai-Basilikum, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-95"><span class="num">95</span><span class="body"><span class="name">Gäng Pet Gai: Hühnerfleisch mit Bambus, Paprika, Bohnen, Thai-Curry und Kokosmilch, sehr scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="sehr scharf" title="sehr scharf"><span class="chili-dot"></span><span class="chili-dot"></span></span></span></li>
+        <li class="item" id="nr-96"><span class="num">96</span><span class="body"><span class="name">Panäng Gai: Hühnerfleisch mit Bambus, Kokosmilch, Paprika, Bohnen und spezieller Thai-Currymischung, scharf</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a><span class="heat" role="img" aria-label="scharf" title="scharf"><span class="chili-dot"></span></span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="beilagen" aria-labelledby="h-beilagen">
+      <h2 class="sec-head" id="h-beilagen"><span class="sec-title">Beilagen</span><span class="sec-range">60&thinsp;&ndash;&thinsp;63</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-60"><span class="num">60</span><span class="body"><span class="name">Gekochter Reis</span></span></li>
+        <li class="item" id="nr-61"><span class="num">61</span><span class="body"><span class="name">Gebratener Reis</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-62"><span class="num">62</span><span class="body"><span class="name">Gebratene Nudeln</span><a class="add" href="#zusatzstoffe" title="Zusatzstoffe 3" aria-label="Zusatzstoffe 3">3</a></span></li>
+        <li class="item" id="nr-63"><span class="num">63</span><span class="body"><span class="name">Pommes frites</span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="nachtisch" aria-labelledby="h-nachtisch">
+      <h2 class="sec-head" id="h-nachtisch"><span class="sec-title">Nachtisch</span><span class="sec-range">64&thinsp;&ndash;&thinsp;67</span></h2>
+      <ul class="items">
+        <li class="item" id="nr-64"><span class="num">64</span><span class="body"><span class="name">Gebackene Banane in Honig</span></span></li>
+        <li class="item" id="nr-65"><span class="num">65</span><span class="body"><span class="name">Gebackene Banane in Honig mit Vanilleeis</span></span></li>
+        <li class="item" id="nr-66"><span class="num">66</span><span class="body"><span class="name">Gebackene Ananas in Honig</span></span></li>
+        <li class="item" id="nr-67"><span class="num">67</span><span class="body"><span class="name">Gebackene Ananas in Honig mit Vanilleeis</span></span></li>
+      </ul>
+    </section>
+
+    <section class="sec" id="getraenke" aria-labelledby="h-getraenke">
+      <h2 class="sec-head" id="h-getraenke"><span class="sec-title">Getränke</span></h2>
+      <ul class="items">
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Fanta, Cola, Cola light, Sprite, Mezzo-Mix, Pepsi</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Mineralwasser, Flasche</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Apfelsaft, Apfelsaftschorle</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Lycheesaft, Guavensaft, Mangosaft</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Bitburger</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Weizen, Hefe</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Chinesisches Tsing-Tao Bier</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Pflaumenwein, auch als Flasche</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Sake, auch als Flasche</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Reisschnaps (Kao Lang)</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Fernet Branca</span></span></li>
+        <li class="item"><span class="num num-empty" aria-hidden="true">&bull;</span><span class="body"><span class="name">Jasmintee, Grüner Tee</span></span></li>
+      </ul>
+    </section>
+    </div>
+  </div>
+</main>
+
+<section class="legend" id="zusatzstoffe" aria-labelledby="h-zus">
+  <div class="wrap">
+    <h2 id="h-zus">Kennzeichnung der Zusatzstoffe</h2>
+    <ul>
+          <li><span class="lg-code">1</span><span class="lg-text">mit Konservierungsstoffen</span></li>
+          <li><span class="lg-code">2</span><span class="lg-text">mit Antioxidationsmitteln</span></li>
+          <li><span class="lg-code">3</span><span class="lg-text">mit Geschmacksverstaerker</span></li>
+          <li><span class="lg-code">4</span><span class="lg-text">mit Phosphat</span></li>
+          <li><span class="lg-code">5</span><span class="lg-text">mit Suessungsmitteln</span></li>
+          <li><span class="lg-code">6</span><span class="lg-text">koffeinhaltig</span></li>
+          <li><span class="lg-code">7</span><span class="lg-text">mit Farbstoff</span></li>
+          <li><span class="lg-code">11</span><span class="lg-text">mit Suessstoff Aspartam (enthaelt eine Phenylalaninquelle)</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>Anschrift</h2>
+        <p>China Wok Dao</p>
+        <p>Hauptstr. 158</p>
+        <p>66976 Rodalben</p>
+        <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Hauptstr.+158+66976+Rodalben" target="_blank" rel="noopener">Route in Google Maps</a>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <p><a href="tel:+496331140888">06331 / 140888</a></p>
+        <p><a href="mailto:lindadao92@gmail.com">lindadao92@gmail.com</a></p>
+      </div>
+      <div class="imp">
+        <h2>Impressum</h2>
+        <p>Angaben gemäß § 5 DDG</p>
+        <p><strong>China Wok Dao</strong><br>Inhaber: Viet Thanh Dao<br>Hauptstr. 158<br>66976 Rodalben</p>
+        <p>Telefon: 06331 / 140888<br>E-Mail: <a href="mailto:lindadao92@gmail.com">lindadao92@gmail.com</a></p>
+        <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Viet Thanh Dao, Anschrift wie oben.</p>
+      </div>
+    </div>
+    <p class="colophon">
+      <span>&copy; 2026 China Wok Dao</span>
+      <span>Alle Preise in Euro, inklusive Mehrwertsteuer</span>
+      <span>Änderungen und Irrtümer vorbehalten</span>
+    </p>
+  </div>
+</footer>
+
+<a class="callbar" href="tel:+496331140888">Jetzt bestellen <span class="tel">06331 / 140888</span></a>
+<script>
+(function(){
+  var HOURS = [[["17:00", "22:00"]], [["11:00", "14:00"], ["17:00", "22:00"]], [["11:00", "14:00"], ["17:00", "22:00"]], [["11:00", "14:00"], ["17:00", "22:00"]], [["11:00", "14:00"], ["17:00", "22:00"]], [["11:00", "14:00"], ["17:00", "22:00"]], [["11:00", "14:00"], ["17:00", "22:00"]]];
+  function mins(s){ var p = s.split(":"); return (+p[0])*60 + (+p[1]); }
+
+  function refreshStatus(){
+    var el = document.getElementById("status");
+    if(!el) return;
+    var now = new Date();
+    var day = (now.getDay() + 6) % 7;            // Mo = 0
+    var nowM = now.getHours()*60 + now.getMinutes();
+    var slots = HOURS[day] || [];
+    var open = null, next = null;
+    for(var i=0;i<slots.length;i++){
+      var a = mins(slots[i][0]), b = mins(slots[i][1]);
+      if(nowM >= a && nowM < b){ open = slots[i]; break; }
+      if(nowM < a && next === null){ next = slots[i]; }
+    }
+    el.classList.remove("open","shut");
+    var label = el.querySelector(".status-text");
+    if(open){
+      el.classList.add("open");
+      label.textContent = "Jetzt geöffnet bis " + open[1] + " Uhr";
+    } else if(next){
+      el.classList.add("shut");
+      label.textContent = "Geschlossen, ab " + next[0] + " Uhr geöffnet";
+    } else {
+      el.classList.add("shut");
+      var d = (day + 1) % 7, guard = 0;
+      while((!HOURS[d] || !HOURS[d].length) && guard++ < 7){ d = (d+1) % 7; }
+      var names = ["morgen","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag","Sonntag","Montag"];
+      label.textContent = "Heute geschlossen, morgen ab " + (HOURS[d] && HOURS[d][0] ? HOURS[d][0][0] : "17:00") + " Uhr";
+    }
+    var rows = document.querySelectorAll(".hours-table tr[data-day]");
+    for(var r=0;r<rows.length;r++){
+      if(+rows[r].getAttribute("data-day") === day){ rows[r].setAttribute("data-today",""); }
+      else { rows[r].removeAttribute("data-today"); }
+    }
+  }
+  refreshStatus();
+  setInterval(refreshStatus, 60000);
+
+  // Aktiven Abschnitt in Index und Chip-Leiste markieren
+  var secs = [].slice.call(document.querySelectorAll(".sec"));
+  var links = {};
+  [].forEach.call(document.querySelectorAll('.index a, .chips a'), function(a){
+    var id = a.getAttribute("href").slice(1);
+    (links[id] = links[id] || []).push(a);
+  });
+  if(secs.length && "IntersectionObserver" in window){
+    var current = null;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ en.target.__vis = en.isIntersecting; });
+      var top = null;
+      for(var i=0;i<secs.length;i++){ if(secs[i].__vis){ top = secs[i].id; break; } }
+      if(!top || top === current) return;
+      if(current && links[current]) links[current].forEach(function(a){ a.removeAttribute("aria-current"); });
+      current = top;
+      if(links[current]) links[current].forEach(function(a){
+        a.setAttribute("aria-current","true");
+        var bar = a.closest(".chips ul");
+        if(bar){ bar.scrollTo({ left: a.offsetLeft - 20, behavior: "smooth" }); }
+      });
+    }, { rootMargin: "-72px 0px -65% 0px", threshold: 0 });
+    secs.forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
